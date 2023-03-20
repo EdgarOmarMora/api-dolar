@@ -1,0 +1,19 @@
+npm init -y									'Crea el PACKAGE.JSON del proyecto.
+npm i express								'Modulo para crear el servidor.
+npm i axios									'Para realizar peticiones HTTP.
+npm i cheerio								'Para accesar a la información de la página.
+npm i -D nodemon								'Para reiniciar el servidor al sufrir algun cambio.
+PACKAGE.JSON								'Configuraciones:
+											"type": "module",				'Para poder utilizar Ecma Script ES.
+											"scripts": {
+    												"dev":"nodemon index.js",	'Para ejecutar el projecto con NODEMON.
+    												"start":"node index.js"		'Para ejecutar el projecto con NODE.
+ 											 },
+npm run dev									'Ejecuta el SCRIPT de DEV.
+.gitignore									'Ignora esta carpeta NODE_MODULES.
+git init									'Inicializa GIT.
+git add .									'Prepara todos los documentos a agregar.
+git commit -m "Versión alpha"						'Agrega un comentario a la captura.
+
+************************************************************
+https://www.eldolar.info/es-MX/mexico/dia/hoy			'Página del precio del dolar actual.
