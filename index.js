@@ -1,15 +1,21 @@
 import express from "express";                      // Para el manejo del servidor.
 import axios from "axios";                          // Para el manejo de HTTP.
 import * as cheerio from "cheerio";                 // Para manejar la data de HTTP.
+import cors from "cors";                            // Para la comunicación entre servidores.
 
 // Crea una instancia de EXPRESS.
 const app=express();
+
+// Indica que cualquier servidor puede solicitar información. 
+const corsOptions={
+    origin: '*',
+};
 
 // Constante con el numero de puerto a utilizar en el servidor.
 const PORT=process.env.PORT || 5000;
 
 // Realizar petición a la ruta raiz.
-app.get("/",async (req,res)=>{
+app.get("/", cors(corsOptions), async (req,res)=>{
     try {
         // Obtener los datos de una página WEB por medio de AXIOS.
         const {data}=await axios.get('https://www.eldolar.info/es-MX/mexico/dia/hoy');

@@ -3,6 +3,7 @@ npm i express								'Modulo para crear el servidor.
 npm i axios									'Para realizar peticiones HTTP.
 npm i cheerio								'Para accesar a la información de la página.
 npm i -D nodemon								'Para reiniciar el servidor al sufrir algun cambio.
+npm i cors									'Para la comunicación entre servidores.
 PACKAGE.JSON								'Configuraciones:
 											"type": "module",				'Para poder utilizar Ecma Script ES.
 											"scripts": {
